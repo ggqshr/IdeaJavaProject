@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.1">
+    <root id="1"/>
+    <schema id="2" parent="1" name="assetmanager">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="bank"/>
+    <schema id="4" parent="1" name="ggq"/>
+    <schema id="5" parent="1" name="ggq1"/>
+    <schema id="6" parent="1" name="hotpot"/>
+    <schema id="7" parent="1" name="information_schema"/>
+    <schema id="8" parent="1" name="lesson"/>
+    <schema id="9" parent="1" name="lianxi"/>
+    <schema id="10" parent="1" name="life_assistant"/>
+    <schema id="11" parent="1" name="messageboard"/>
+    <schema id="12" parent="1" name="mysql"/>
+    <schema id="13" parent="1" name="performance_schema"/>
+    <schema id="14" parent="1" name="python_test"/>
+    <schema id="15" parent="1" name="restaurant"/>
+    <schema id="16" parent="1" name="sql_text"/>
+    <schema id="17" parent="1" name="student"/>
+    <schema id="18" parent="1" name="学生信息"/>
+    <table id="19" parent="2" name="admin"/>
+    <table id="20" parent="2" name="asset"/>
+    <table id="21" parent="2" name="bank"/>
+    <table id="22" parent="2" name="user"/>
+    <column id="23" parent="19" name="adminId">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="24" parent="19" name="adminName">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="25" parent="19" name="adminPassword">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="26" parent="19" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>adminId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="27" parent="20" name="bankId">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="28" parent="20" name="cardNum">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="29" parent="20" name="cardMoney">
+      <Position>3</Position>
+      <DataType>double(9,2)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="20" name="createDate">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="31" parent="20" name="userId">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="32" parent="20" name="FK_userId">
+      <ColNames>userId</ColNames>
+    </index>
+    <key id="33" parent="20" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>bankId
+cardNum</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="34" parent="21" name="bankId">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="35" parent="21" name="bankName">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="36" parent="21" name="bankTel">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="37" parent="21" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>bankId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="38" parent="22" name="userId">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="39" parent="22" name="userName">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="40" parent="22" name="userPassword">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="22" name="realName">
+      <Position>4</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="22" name="sex">
+      <Position>5</Position>
+      <DataType>varchar(2)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="43" parent="22" name="tel">
+      <Position>6</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="44" parent="22" name="idCard">
+      <Position>7</Position>
+      <DataType>varchar(18)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="22" name="address">
+      <Position>8</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="46" parent="22" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>userId</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

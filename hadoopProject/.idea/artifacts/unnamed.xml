@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="unnamed">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="udf.jar">
+      <element id="module-output" name="hadoopProject" />
+    </root>
+  </artifact>
+</component>

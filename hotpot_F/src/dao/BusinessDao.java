@@ -1,0 +1,29 @@
+package dao;
+
+import Enetity.Business;
+import Enetity.Combo;
+
+import java.util.ArrayList;
+
+
+public interface BusinessDao {
+    //??????
+    public Object[] insertBusiness(Business business);
+
+    //??????????????
+    public ArrayList<Business> QueryBusinessAsCustNumber(String custNumber);
+
+    //???????????
+    public ArrayList<Business> QueryBusinessAsDay(String date);
+
+    //????????????????
+    public void queryBusinessAsMonth(String date);
+
+    //?????????????
+    public ArrayList<Combo> queryComboScore();
+
+    //????????
+    public boolean updateScore(String businessNumber, int score);
+
+    public ArrayList<Business> listBusiness();
+}
