@@ -1,5 +1,4 @@
-<%@page language="java" import="java.util.*"
-        contentType="text/html; charset=utf-8" %>
+<%@page language="java" import="java.util.*" contentType="text/html; charset=utf-8" %>
 <%
 
     String path = request.getContextPath();
@@ -1039,11 +1038,13 @@
                 content_url: function (url) {
                     //this is for Ace demo only, you should change it
                     //please refer to documentation for more info
-
+                    console.log(url);
                     if (!url.match(/^page\//)) return false;
                     var path = document.location.pathname;
+                    console.log(path);
                     if (!path.match(/html/))
                         path = '/html/ajax.jsp';
+                    console.log(path);
                     //for Ace HTML demo version, convert ajax.jsp#page/gallery to > gallery.html and load it
                     if (path.match(/ajax\.jsp/)) /*alert(path.replace(/ajax\.jsp/, url.replace(/^page\//, '') + '.jsp'));*/return path.replace(/ajax\.jsp/, url.replace(/^page\//, '') + '.jsp');
 

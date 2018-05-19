@@ -6,6 +6,7 @@ public class WishDataUDF extends UDF {
     public String evaluate(String line) {
         String line1 = line.replaceAll("\n", "");
         String line2 = line1.replaceAll("\r", "");
-        return line2;
+        String line3 = line2.replaceAll("\t", "");
+        return line3;
     }
 }
