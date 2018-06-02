@@ -1,5 +1,6 @@
 <%@ page import="entity.all_rank_table" %>
 <%@ page import="java.util.ArrayList" %>
+<%@ page import="java.net.URLEncoder" %>
 <%--
   Created by IntelliJ IDEA.
   User: ggq
@@ -84,8 +85,9 @@
                 <c:forEach items="${list}" var='ss'>
                     <tr>
                         <td>
-                            <a href="/place?p=${ss.comment_place}">${ss.comment_place}</a>
+                            <a href="ajax.jsp#page/place?p=${ss.comment_place}&view=${ss.view_rank}&price=${ss.price_rank}&interest=${ss.interest_rank}&total=${ss.total_rank}">${ss.comment_place}</a>
                         </td>
+
                         <td>
                                 ${ss.view_rank}
                         </td>

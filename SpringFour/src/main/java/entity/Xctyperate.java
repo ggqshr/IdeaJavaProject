@@ -3,8 +3,8 @@ package entity;
 
 public class Xctyperate {
 
-  private String commentPlace;
-  private String viewType;
+  private String comment_place;
+  private String view_type;
   private double prate;
   private double nrate;
   private long pnum;
@@ -12,23 +12,21 @@ public class Xctyperate {
   private long anum;
 
 
-  public String getCommentPlace() {
-    return commentPlace;
+  public String getComment_place() {
+    return comment_place;
   }
 
-  public void setCommentPlace(String commentPlace) {
-    this.commentPlace = commentPlace;
+  public void setComment_place(String comment_place) {
+    this.comment_place = comment_place;
   }
 
-
-  public String getViewType() {
-    return viewType;
+  public String getView_type() {
+    return view_type;
   }
 
-  public void setViewType(String viewType) {
-    this.viewType = viewType;
+  public void setView_type(String view_type) {
+    this.view_type = view_type;
   }
-
 
   public double getPrate() {
     return prate;

@@ -11,7 +11,7 @@ import java.util.List;
 public class jdbcUtil {
     private static String driveClassName = "com.mysql.jdbc.Driver";
     private static String url = "jdbc:mysql://localhost:3306/xchadoopdataexport?useUnicode=true&characterEncoding=utf8";
-    static Connection conn = null;
+    static Connection connn = null;
     private static String user = "root";
     private static String password = "123";
 
@@ -38,8 +38,11 @@ public class jdbcUtil {
     public static List query(String sql, Object para[], ResultSetHandler rsh) {
         QueryRunner qr = new QueryRunner();
         List result = null;
+        if (connn == null) {
+            connn = getConnect();
+        }
         try{
-            result = (List) qr.query(getConnect(),sql,para,rsh);
+            result = (List) qr.query(connn,sql,para,rsh);
         } catch (SQLException e) {
             e.printStackTrace();
         }

@@ -7,13 +7,13 @@ public class Xcemotionandkey {
   private String authorName;
   private String content;
   private long useful;
-  private long viewScore;
-  private long interestScore;
-  private long priceScore;
-  private String viewType;
-  private long totalScore;
-  private String commentTime;
-  private String commentPlace;
+  private long view_score;
+  private long interest_score;
+  private long price_score;
+  private String view_type;
+  private long total_score;
+  private String comment_time;
+  private String comment_place;
   private String emotion;
   private String tag;
   private String keywords;
@@ -55,68 +55,61 @@ public class Xcemotionandkey {
   }
 
 
-  public long getViewScore() {
-    return viewScore;
+  public long getView_score() {
+    return view_score;
   }
 
-  public void setViewScore(long viewScore) {
-    this.viewScore = viewScore;
+  public void setView_score(long view_score) {
+    this.view_score = view_score;
   }
 
-
-  public long getInterestScore() {
-    return interestScore;
+  public long getInterest_score() {
+    return interest_score;
   }
 
-  public void setInterestScore(long interestScore) {
-    this.interestScore = interestScore;
+  public void setInterest_score(long interest_score) {
+    this.interest_score = interest_score;
   }
 
-
-  public long getPriceScore() {
-    return priceScore;
+  public long getPrice_score() {
+    return price_score;
   }
 
-  public void setPriceScore(long priceScore) {
-    this.priceScore = priceScore;
+  public void setPrice_score(long price_score) {
+    this.price_score = price_score;
   }
 
-
-  public String getViewType() {
-    return viewType;
+  public String getView_type() {
+    return view_type;
   }
 
-  public void setViewType(String viewType) {
-    this.viewType = viewType;
+  public void setView_type(String view_type) {
+    this.view_type = view_type;
   }
 
-
-  public long getTotalScore() {
-    return totalScore;
+  public long getTotal_score() {
+    return total_score;
   }
 
-  public void setTotalScore(long totalScore) {
-    this.totalScore = totalScore;
+  public void setTotal_score(long total_score) {
+    this.total_score = total_score;
   }
 
-
-  public String getCommentTime() {
-    return commentTime;
+  public String getComment_time() {
+    return comment_time;
   }
 
-  public void setCommentTime(String commentTime) {
-    this.commentTime = commentTime;
+  public void setComment_time(String comment_time) {
+    this.comment_time = comment_time;
   }
 
-
-  public String getCommentPlace() {
-    return commentPlace;
+  public String getComment_place() {
+    return comment_place;
   }
 
-  public void setCommentPlace(String commentPlace) {
-    this.commentPlace = commentPlace;
+  public void setComment_place(String comment_place) {
+    this.comment_place = comment_place;
   }
-
 
   public String getEmotion() {
     return emotion;

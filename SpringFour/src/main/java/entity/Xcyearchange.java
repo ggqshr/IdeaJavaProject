@@ -3,28 +3,26 @@ package entity;
 
 public class Xcyearchange {
 
-  private String commentPlace;
-  private String commentYear;
+  private String comment_place;
+  private String comment_year;
   private long num;
 
 
-  public String getCommentPlace() {
-    return commentPlace;
+  public String getComment_place() {
+    return comment_place;
   }
 
-  public void setCommentPlace(String commentPlace) {
-    this.commentPlace = commentPlace;
+  public void setComment_place(String comment_place) {
+    this.comment_place = comment_place;
   }
 
-
-  public String getCommentYear() {
-    return commentYear;
+  public String getComment_year() {
+    return comment_year;
   }
 
-  public void setCommentYear(String commentYear) {
-    this.commentYear = commentYear;
+  public void setComment_year(String comment_year) {
+    this.comment_year = comment_year;
   }
-
 
   public long getNum() {
     return num;
@@ -33,5 +31,4 @@ public class Xcyearchange {
   public void setNum(long num) {
     this.num = num;
   }
-
 }
