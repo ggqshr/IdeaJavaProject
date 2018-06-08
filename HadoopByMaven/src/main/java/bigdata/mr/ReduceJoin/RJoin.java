@@ -48,7 +48,7 @@ public class RJoin {
         @Override
         protected void reduce(Text key, Iterable<InfoBean> values, Context context) throws IOException, InterruptedException {
             InfoBean pdbean = new InfoBean();
-            ArrayList<InfoBean> orderBeans = new ArrayList<>();
+            ArrayList<InfoBean> orderBeans = new ArrayList();
 
             for (InfoBean bean : values) {
                 if ("1".equals(bean.getFlag())) {

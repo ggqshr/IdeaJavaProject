@@ -20,8 +20,8 @@ import java.io.IOException;
  * 提取关键字中出现次数最多的mapreduce
  */
 public class ExtractKeyword {
-    static class ExtractKeywordMapper extends Mapper<LongWritable, Text, SimipBean, IntWritable> {
-        SimipBean sb = new SimipBean();
+    static class ExtractKeywordMapper extends Mapper<LongWritable, Text, KeyWordBean, IntWritable> {
+        KeyWordBean sb = new KeyWordBean();
         PerceptronLexicalAnalyzer analyzer;
 
         {
@@ -83,9 +83,9 @@ public class ExtractKeyword {
         }
     }
 
-    static class ExtractKeywordReducer extends Reducer<SimipBean, IntWritable, SimipBean, IntWritable> {
+    static class ExtractKeywordReducer extends Reducer<KeyWordBean, IntWritable, KeyWordBean, IntWritable> {
         @Override
-        protected void reduce(SimipBean key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
+        protected void reduce(KeyWordBean key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
             int count = 0;
             for (IntWritable value : values) {
                 count += value.get();
@@ -113,10 +113,10 @@ public class ExtractKeyword {
         job.setMapperClass(ExtractKeywordMapper.class);
         job.setReducerClass(ExtractKeywordReducer.class);
         //指定mapper输出数据的kv类型
-        job.setMapOutputKeyClass(SimipBean.class);
+        job.setMapOutputKeyClass(KeyWordBean.class);
         job.setMapOutputValueClass(IntWritable.class);
         //指定最终输出的kv类型
-        job.setOutputKeyClass(SimipBean.class);
+        job.setOutputKeyClass(KeyWordBean.class);
         job.setOutputValueClass(IntWritable.class);
         //指定Partitioner
         job.setPartitionerClass(PartitionByEmotiom.class);
@@ -149,10 +149,10 @@ public class ExtractKeyword {
         job.setMapperClass(ExtractKeywordMapper.class);
         job.setReducerClass(ExtractKeywordReducer.class);
         //指定mapper输出数据的kv类型
-        job.setMapOutputKeyClass(SimipBean.class);
+        job.setMapOutputKeyClass(KeyWordBean.class);
         job.setMapOutputValueClass(IntWritable.class);
         //指定最终输出的kv类型
-        job.setOutputKeyClass(SimipBean.class);
+        job.setOutputKeyClass(KeyWordBean.class);
         job.setOutputValueClass(IntWritable.class);
         //指定Partitioner
         job.setPartitionerClass(PartitionByEmotiom.class);

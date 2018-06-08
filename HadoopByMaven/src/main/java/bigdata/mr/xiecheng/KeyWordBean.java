@@ -7,7 +7,7 @@ import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-public class SimipBean implements WritableComparable<SimipBean> {
+public class KeyWordBean implements WritableComparable<KeyWordBean> {
     private String comment_place;
     private String emotiom;
     private String keyword;
@@ -19,7 +19,7 @@ public class SimipBean implements WritableComparable<SimipBean> {
             e.printStackTrace();
         }
     }
-    public SimipBean() {
+    public KeyWordBean() {
     }
 
     public void set(String comment_place, String emotiom, String keyword) {
@@ -52,7 +52,7 @@ public class SimipBean implements WritableComparable<SimipBean> {
         this.keyword = keyword;
     }
 
-    public int compareTo(SimipBean o) {
+    public int compareTo(KeyWordBean o) {
         String thiscomment_place = this.comment_place;
         String thatcomment_place = o.getComment_place();
         int cmp = thiscomment_place.compareTo(thatcomment_place);

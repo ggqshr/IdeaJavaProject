@@ -14,7 +14,7 @@ import java.util.HashMap;
  * 而并不改变Partitioner，则数据会被随机分配。
  */
 public class ProvicePartitioner extends Partitioner<Text, FlowBean> {
-    public static HashMap<String, Integer> proviceDice = new HashMap<>();
+    public static HashMap<String, Integer> proviceDice = new HashMap();
 //    模拟数据库
 
     static {
