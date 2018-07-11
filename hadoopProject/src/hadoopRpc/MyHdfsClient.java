@@ -15,6 +15,5 @@ public class MyHdfsClient {
         ClientNamenodeProtocol proxy = RPC.getProxy(ClientNamenodeProtocol.class, 1L, new InetSocketAddress("localhost", 8888), new Configuration());
         String data = proxy.getMetaData("/test/test111");
         System.out.println(data);
-
     }
 }

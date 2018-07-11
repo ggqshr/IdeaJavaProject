@@ -7,8 +7,25 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="hadoop-common-2.9.0-tests" level="project" />
-    <orderEntry type="library" name="accumulo-core-1.6.0" level="project" />
-    <orderEntry type="library" name="hanlp-portable-1.6.3" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/respository/mavenrespository/hadoop-core-0.19.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/respository/mavenrespository/hadoop-core-0.19.0_2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="hadoop" level="project" />
+    <orderEntry type="library" name="hive-exec" level="project" />
   </component>
 </module>
