@@ -64,7 +64,7 @@
     <script type="text/javascript">
         function getPlace() {
             var place = document.getElementById("custNumber").value;
-            $.ajax(
+            $.ajax(  //ajax提交数据
                 {
                     url:"/getPlace?place="+place,
                     type:"GET",
@@ -74,6 +74,11 @@
                 }
             )
         }
+        $("body").keydown(function() { //回车提交
+            if (event.keyCode == "13") {
+                getPlace();
+            }
+        });
     </script>
 </div>
 

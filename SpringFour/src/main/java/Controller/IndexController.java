@@ -5,6 +5,7 @@ import com.sun.tracing.dtrace.Attributes;
 import entity.*;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
+import org.springframework.http.HttpRequest;
 import org.springframework.jdbc.support.JdbcUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -13,9 +14,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
+import redis.clients.jedis.Jedis;
 import util.FillData;
 import util.jdbcUtil;
 
+import javax.servlet.http.HttpServletRequest;
+import java.io.DataInputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -23,6 +28,44 @@ import java.util.List;
 @Controller
 public class IndexController {
     Gson gson = new Gson();
+    Jedis jedis = new Jedis("localhost");
+
+    @RequestMapping(value = "/tanzhen", method = RequestMethod.POST)
+    @ResponseBody
+    public String testTanZhen(HttpServletRequest request) {
+        String data = request.getParameter("data");
+        System.out.println(request.getParameter("type"));
+        try {
+            jedis.lpush("mac", data);
+        } catch (Exception e) {
+            return "ok";
+        } finally {
+            return "ok";
+        }
+//        String delimiter = "\1";//分隔符号为数字 1 不是字母 1,因此需要斜线转义
+//        int startp = data.indexOf(delimiter);//正确的数据以分隔符开始,如果第一个字母不是分隔符,就去除掉,从找到 的第一个分隔符开始
+//        if (startp != -1) { //正确的数据以分隔符结束,如果最后一个字母不是分隔符,就去除掉,从最后一个分割符结束
+//            int endp = data.lastIndexOf(delimiter);
+//            if (((endp - startp) - 1) > 12)//因为 mac 地址为 12 字母,加上至少一个 rssi,因此长度要大于 12
+//            {
+//                String datatrimed = data.substring(startp + 1, endp);//去除掉两边可能的脏数据
+//                String[] datasplits = datatrimed.split(delimiter);
+//                for (int i = 0; i < datasplits.length; i++) {
+//                    if (datasplits[i].length() > 12)//风险防控,正确的数据长度肯定大于 12
+//                    {
+//                        String mac = datasplits[i].substring(0, 12);//每一段的前 12 个字符为 mac 地址 //转为 byte 处理,不同语言方法不同
+//                        System.out.println(mac);
+//                        byte[] datasplitbytes = datasplits[i].getBytes(); //从第 13 个 byte 开始,每一个 byte 表示该 mac 地址的一个 rssi 值
+//                        for (int j = 12; j < datasplitbytes.length; j++) {
+//                            int rssi = datasplitbytes[j]; //正确的rssi, 进行处理即可,rssi应该是负数,但我们为了减少传输字节,用的是绝对值,rssi是一个9到99的数 值
+//                            if ((rssi > 9) && (rssi < 100)) ;
+//                        }
+//                    }
+//                }
+//            }
+//        }
+
+    }
 
     @RequestMapping(value = "/getPlace", method = RequestMethod.GET)
     public String getPlace(String place, ModelMap mm) {
@@ -80,7 +123,9 @@ public class IndexController {
     }
 
     @RequestMapping(value = "/place")
-    public String getPlacePage(String p, String view, String price, String interest, String total, ModelMap mm) {
+    public String getPlacePage(String p, String view, String price, String interest, String
+            total, ModelMap
+                                       mm) {
         Object[] para = {
                 p
         };
@@ -97,14 +142,12 @@ public class IndexController {
         FillData.fillYearAndData(map, sql, para);
         FillData.fillSessAndData(map, sessSql, para);
         FillData.fillTypeRate(map, typeSql, para);
-        for (int i=0;i<3-pTag.size();i++)
-        {
+        for (int i = 0; i < 3 - pTag.size(); i++) {
             Xcemotionandkey xx = new Xcemotionandkey();
             xx.setTag("无");
             pTag.add(xx);
         }
-        for (int i=0;i<3-nTag.size();i++)
-        {
+        for (int i = 0; i < 3 - nTag.size(); i++) {
             Xcemotionandkey xx = new Xcemotionandkey();
             xx.setTag("无");
             nTag.add(xx);

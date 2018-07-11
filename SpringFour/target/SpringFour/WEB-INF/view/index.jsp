@@ -16,38 +16,9 @@
             $("#sample-table-2").DataTable(
                 {
                     processing: true,
-                    // columns: [
-                    //     {data: "comment_place"},
-                    //     {data: "view_rank"},
-                    //     {data: "price_rank"},
-                    //     {data: "interest_rank"},
-                    //     {data: "total_rank"}
-                    // ]
+                    "order": [[4, "asc"]]
                 }
             )
-            // $.ajax(
-            //     {
-            //         url: "/getjson",
-            //         type: "GET",
-            //         async: false,
-            //         dataType: 'json',
-            //         success: function (dd) {
-            //             $("#sample-table-2").DataTable(
-            //                 {
-            //                     processing: true,
-            //                     data: dd,
-            //                     columns: [
-            //                         {data: "comment_place"},
-            //                         {data: "view_rank"},
-            //                         {data: "price_rank"},
-            //                         {data: "interest_rank"},
-            //                         {data: "total_rank"}
-            //                     ]
-            //                 }
-            //             )
-            //         }
-            //     }
-            // )
         });
     </script>
     <h1>
@@ -61,10 +32,6 @@
         <div class="table-header">
             青岛市旅游景点排名
         </div>
-
-        <!-- <div class="table-responsive"> -->
-
-        <!-- <div class="dataTables_borderWrap"> -->
         <div>
             <table id="sample-table-2" class="table table-striped table-bordered table-hover">
                 <thead>
@@ -136,7 +103,6 @@
                 //3 = 'THUMBNAIL_FAILED'
                 //alert(error_code);
             }
-
         }).on('change', function () {
             //console.log($(this).data('ace_input_files'));
             //console.log($(this).data('ace_input_method'));
