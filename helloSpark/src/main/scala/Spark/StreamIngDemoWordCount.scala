@@ -12,7 +12,7 @@ object StreamIngDemoWordCount {
     /**
       * 传入SparkContext和产生RDD的时间间隔
       */
-    val ssc = new StreamingContext(conf, Seconds(5))
+    val ssc = new StreamingContext(sc, Seconds(5))
     val ds = ssc.socketTextStream("192.168.101.128", 8888)
     val result = ds.flatMap(_.split(" ")).map((_, 1)).reduceByKey(_ + _)
     result.print()
