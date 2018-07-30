@@ -1,7 +1,7 @@
-package Spark
+package Spark.StreamingDemo
 
-import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.streaming.{Seconds, StreamingContext}
+import org.apache.spark.{SparkConf, SparkContext}
 
 object StatfulWordCountStreaming {
   /**
@@ -14,15 +14,14 @@ object StatfulWordCountStreaming {
   /**
     * 另一种函数
     */
-  val func: Iterator[(String, Seq[Int], Option[Int])] => Iterator[(String, Int)] = {
-    /**
-      * 三种书写方式
-      */
-    it =>
-      it.flatMap(x => Some(x._2.sum + x._3.getOrElse(0)).map((x._1, _)))
-      //    it => it.flatMap{case (x,y,z)=>Some(y.sum+z.getOrElse(0)).map((x,_))}
-//      it.map(i => (i._1, i._2.sum + i._3.getOrElse(0)))
-  }
+//  val func: Iterator[(String, Seq[Int], Option[Int])] => Iterator[(String, Int)] = {
+//    /**
+//      * 三种书写方式
+//      */
+//    it => it.flatMap(x => Some(x._2.sum + x._3.getOrElse(0)).map((x._1, _)))
+//    //    it => it.flatMap{case (x,y,z)=>Some(y.sum+z.getOrElse(0)).map((x,_))}
+//    //      it.map(i => (i._1, i._2.sum + i._3.getOrElse(0)))
+//  }
 
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf().setAppName("streamingDemo").setMaster("local[4]")

@@ -1,6 +1,6 @@
-package Spark
+package Spark.SparkSQLDEMO
 
-import org.apache.spark.sql.{SQLContext, SparkSession}
+import org.apache.spark.sql.SQLContext
 import org.apache.spark.{SparkConf, SparkContext}
 
 object SqlDemo {

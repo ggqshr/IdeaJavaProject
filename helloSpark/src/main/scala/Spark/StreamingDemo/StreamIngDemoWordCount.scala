@@ -1,4 +1,4 @@
-package Spark
+package Spark.StreamingDemo
 
 import org.apache.spark.streaming._
 import org.apache.spark.{SparkConf, SparkContext}

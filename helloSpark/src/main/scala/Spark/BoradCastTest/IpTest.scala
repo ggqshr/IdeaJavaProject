@@ -1,4 +1,4 @@
-package Spark
+package Spark.BoradCastTest
 
 import org.apache.spark.{SparkConf, SparkContext}
 
