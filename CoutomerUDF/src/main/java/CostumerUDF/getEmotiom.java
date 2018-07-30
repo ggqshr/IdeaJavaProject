@@ -11,20 +11,20 @@ import java.util.List;
 
 public class getEmotiom extends UDF {
     private static IClassifier i = new NaiveBayesClassifier(); //分类器模型
-    static{
+    static {
         try {
-            i.train("trainData");
+            i.train("trainData"); //模型训练,传入训练数据地址
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public static String changeCodeToUtf8(String origin) throws UnsupportedEncodingException {
-        return new String(origin.getBytes("utf-8"), "utf-8");
-    }
-
-      public String evaluate(String line) throws IOException {
+    public String evaluate(String line) throws IOException {
         String emotion = i.classify(changeCodeToUtf8(line));
         return emotion;
+    }
+
+    public static String changeCodeToUtf8(String origin) throws UnsupportedEncodingException {
+        return new String(origin.getBytes("utf-8"), "utf-8");
     }
 }

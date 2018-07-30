@@ -1,0 +1,8 @@
+[INFO ][2018/07/29 22:07:37797][Util.JdbcUtil.queryOne(JdbcUtil.java:29)]
+开始查询
+[INFO ][2018/07/29 22:07:38176][Util.JdbcUtil.queryOne(JdbcUtil.java:36)]
+结束查询
+[INFO ][2018/07/29 22:07:47696][Util.JdbcUtil.queryOne(JdbcUtil.java:29)]
+开始查询
+[INFO ][2018/07/29 22:07:4865 ][Util.JdbcUtil.queryOne(JdbcUtil.java:36)]
+结束查询

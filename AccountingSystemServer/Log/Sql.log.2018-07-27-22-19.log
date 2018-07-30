@@ -1,0 +1,5 @@
+[INFO ][2018/07/27 22:19:02730][Util.JdbcUtil.queryAll(JdbcUtil.java:22)]
+开始查询
+ [INFO ][2018/07/27 22:19:03114][Util.JdbcUtil.queryAll(JdbcUtil.java:29)]
+结束查询
+ 

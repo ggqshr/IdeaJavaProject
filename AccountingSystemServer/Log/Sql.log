@@ -1,0 +1,4 @@
+[INFO ][2018/07/29 22:26:01638][Util.JdbcUtil.queryMany(JdbcUtil.java:42)]
+开始查询
+[INFO ][2018/07/29 22:26:01965][Util.JdbcUtil.queryMany(JdbcUtil.java:49)]
+结束查询

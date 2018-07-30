@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="hadoop">
+    <CLASSES>
+      <root url="file://D:/respository/mavenrespository/org/apache/hadoop" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://D:/respository/mavenrespository/org/apache/hadoop" recursive="false" />
+  </library>
+</component>
