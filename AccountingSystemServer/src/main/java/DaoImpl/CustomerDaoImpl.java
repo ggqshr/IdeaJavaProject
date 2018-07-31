@@ -68,7 +68,7 @@ public class CustomerDaoImpl implements CustomerDao {
     }
 
     @Override
-    public List getAllCustomer() {
+    public List<Customer> getAllCustomer() {
         String sql = "select * from customer";
         Object[] para = {};
         return jdbcUtil.queryMany(sql, para, new BeanListHandler(Customer.class));

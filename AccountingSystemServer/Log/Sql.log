@@ -1,4 +1,84 @@
-[INFO ][2018/07/29 22:26:01638][Util.JdbcUtil.queryMany(JdbcUtil.java:42)]
+[INFO ][2018/07/31 20:21:3091 ][Util.JdbcUtil.executeSql(JdbcUtil.java:55)]
+开始更新
+[INFO ][2018/07/31 20:21:30387][Util.JdbcUtil.executeSql(JdbcUtil.java:62)]
+结束更新
+[INFO ][2018/07/31 20:21:30479][Util.JdbcUtil.executeSql(JdbcUtil.java:55)]
+开始更新
+[INFO ][2018/07/31 20:21:30496][Util.JdbcUtil.executeSql(JdbcUtil.java:62)]
+结束更新
+[INFO ][2018/07/31 20:21:30617][Util.JdbcUtil.queryMany(JdbcUtil.java:42)]
 开始查询
-[INFO ][2018/07/29 22:26:01965][Util.JdbcUtil.queryMany(JdbcUtil.java:49)]
+[INFO ][2018/07/31 20:21:30648][Util.JdbcUtil.queryMany(JdbcUtil.java:49)]
 结束查询
+[INFO ][2018/07/31 20:21:30734][Util.JdbcUtil.queryOne(JdbcUtil.java:29)]
+开始查询
+[INFO ][2018/07/31 20:21:30752][Util.JdbcUtil.queryOne(JdbcUtil.java:36)]
+结束查询
+[INFO ][2018/07/31 20:21:30830][Util.JdbcUtil.executeSql(JdbcUtil.java:55)]
+开始更新
+[INFO ][2018/07/31 20:21:30850][Util.JdbcUtil.executeSql(JdbcUtil.java:62)]
+结束更新
+[INFO ][2018/07/31 20:21:30930][Util.JdbcUtil.queryOne(JdbcUtil.java:29)]
+开始查询
+[INFO ][2018/07/31 20:21:30947][Util.JdbcUtil.queryOne(JdbcUtil.java:36)]
+结束查询
+[INFO ][2018/07/31 20:41:54352][Util.JdbcUtil.executeSql(JdbcUtil.java:55)]
+开始更新
+[INFO ][2018/07/31 20:41:54821][Util.JdbcUtil.executeSql(JdbcUtil.java:62)]
+结束更新
+[INFO ][2018/07/31 20:42:18921][Util.JdbcUtil.executeSql(JdbcUtil.java:55)]
+开始更新
+[INFO ][2018/07/31 20:42:19298][Util.JdbcUtil.executeSql(JdbcUtil.java:62)]
+结束更新
+[INFO ][2018/07/31 20:42:40373][Util.JdbcUtil.executeSql(JdbcUtil.java:55)]
+开始更新
+[INFO ][2018/07/31 20:42:40780][Util.JdbcUtil.executeSql(JdbcUtil.java:62)]
+结束更新
+[INFO ][2018/07/31 20:43:03516][Util.JdbcUtil.executeSql(JdbcUtil.java:55)]
+开始更新
+[INFO ][2018/07/31 20:43:03916][Util.JdbcUtil.executeSql(JdbcUtil.java:62)]
+结束更新
+[INFO ][2018/07/31 20:43:18485][Util.JdbcUtil.executeSql(JdbcUtil.java:55)]
+开始更新
+[INFO ][2018/07/31 20:43:18869][Util.JdbcUtil.executeSql(JdbcUtil.java:62)]
+结束更新
+[INFO ][2018/07/31 20:43:46510][Util.JdbcUtil.queryOne(JdbcUtil.java:29)]
+开始查询
+[INFO ][2018/07/31 20:43:46879][Util.JdbcUtil.queryOne(JdbcUtil.java:36)]
+结束查询
+[INFO ][2018/07/31 20:45:07710][Util.JdbcUtil.queryOne(JdbcUtil.java:29)]
+开始查询
+[INFO ][2018/07/31 20:45:0882 ][Util.JdbcUtil.queryOne(JdbcUtil.java:36)]
+结束查询
+[INFO ][2018/07/31 20:46:36398][Util.JdbcUtil.queryMany(JdbcUtil.java:42)]
+开始查询
+[INFO ][2018/07/31 20:46:36772][Util.JdbcUtil.queryMany(JdbcUtil.java:49)]
+结束查询
+[INFO ][2018/07/31 20:46:44479][Util.JdbcUtil.executeSql(JdbcUtil.java:55)]
+开始更新
+[INFO ][2018/07/31 20:46:44837][Util.JdbcUtil.executeSql(JdbcUtil.java:62)]
+结束更新
+[INFO ][2018/07/31 20:46:44932][Util.JdbcUtil.queryOne(JdbcUtil.java:29)]
+开始查询
+[INFO ][2018/07/31 20:46:44968][Util.JdbcUtil.queryOne(JdbcUtil.java:36)]
+结束查询
+[INFO ][2018/07/31 20:46:4577 ][Util.JdbcUtil.executeSql(JdbcUtil.java:55)]
+开始更新
+[INFO ][2018/07/31 20:46:45106][Util.JdbcUtil.executeSql(JdbcUtil.java:62)]
+结束更新
+[INFO ][2018/07/31 20:46:45249][Util.JdbcUtil.executeSql(JdbcUtil.java:55)]
+开始更新
+[INFO ][2018/07/31 20:46:45265][Util.JdbcUtil.executeSql(JdbcUtil.java:62)]
+结束更新
+[INFO ][2018/07/31 20:46:45356][Util.JdbcUtil.queryMany(JdbcUtil.java:42)]
+开始查询
+[INFO ][2018/07/31 20:46:45381][Util.JdbcUtil.queryMany(JdbcUtil.java:49)]
+结束查询
+[INFO ][2018/07/31 20:46:45465][Util.JdbcUtil.queryOne(JdbcUtil.java:29)]
+开始查询
+[INFO ][2018/07/31 20:46:45484][Util.JdbcUtil.queryOne(JdbcUtil.java:36)]
+结束查询
+[INFO ][2018/07/31 20:46:59324][Util.JdbcUtil.executeSql(JdbcUtil.java:55)]
+开始更新
+[INFO ][2018/07/31 20:46:59671][Util.JdbcUtil.executeSql(JdbcUtil.java:62)]
+结束更新

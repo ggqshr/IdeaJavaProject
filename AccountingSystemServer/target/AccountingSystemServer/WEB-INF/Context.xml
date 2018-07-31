@@ -42,5 +42,10 @@
         <property name="breakAfterAcquireFailure" value="true"/>
     </bean>
     <bean id="jdbcutl" class="Util.JdbcUtil"/>
+    <bean id="gson" class="com.google.gson.Gson"/>
+    <bean id="queryRunner" class="org.apache.commons.dbutils.QueryRunner"/>
     <context:component-scan base-package="Controller"/>
+    <context:component-scan base-package="DaoImpl"/>
+    <context:component-scan base-package="Util"/>
+    <context:component-scan base-package="ServiceImpl"/>
 </beans>

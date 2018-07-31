@@ -44,5 +44,5 @@ public interface CustomerDao {
      * 得到所有的顾客信息
      * @return 所有顾客信息的列表
      */
-    List getAllCustomer();
+    List<Customer> getAllCustomer();
 }
