@@ -10,9 +10,10 @@ import java.util.Map;
 @Controller
 public class HelloController {
     @RequestMapping(path = "/success")
-    public String success(Map<String,Object> map) {
-        map.put("hello","你好");
-        map.put("users", Arrays.asList("zhangsan","lisi"));
+    public String success(Map<String, Object> map) {
+        map.put("hello", "你好");
+        map.put("users", Arrays.asList("zhangsan", "lisi"));
         return "success";
     }
+
 }
