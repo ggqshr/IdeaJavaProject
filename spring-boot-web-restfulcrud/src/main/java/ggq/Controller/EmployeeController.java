@@ -7,8 +7,7 @@ import ggq.entities.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 
@@ -40,6 +39,27 @@ public class EmployeeController {
         // 来到员工列表界面
         // redirect 表示重定向
         // forward 表示转发
+        return "redirect:/emps";
+    }
+
+    @GetMapping("/emp/{id}")
+    public String toEitPage(@PathVariable("id") Integer id, Model model) {
+        Employee employee = employeeDao.get(id);
+        Collection<Department> departments = departmentDao.getDepartments();
+        model.addAttribute("depts", departments);
+        model.addAttribute("emp", employee);
+        return "emp/add";
+    }
+
+    @PutMapping("/emp/")
+    public String updateEmployee(Employee employee) {
+        employeeDao.save(employee);
+        return "redirect:/emps";
+    }
+
+    @DeleteMapping("/emp/{id}")
+    public String deleteEmployee(@PathVariable Integer id) {
+        employeeDao.delete(id);
         return "redirect:/emps";
     }
 }
