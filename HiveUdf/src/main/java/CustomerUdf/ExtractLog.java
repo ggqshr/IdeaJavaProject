@@ -17,8 +17,10 @@ public class ExtractLog extends UDF {
 
     public HashMap<String, String> evaluate(String line) {
         String[] split = line.split(" ");
-
         HashMap<String, String> fields = new HashMap<>();
+        if (split.length < 3) {
+            return fields;
+        }
         if ("-".equals(split[1])) {
             return fields;
         }

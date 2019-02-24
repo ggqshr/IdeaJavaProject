@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6cfdf9e-3d07-45d8-85e5-c3701e7c5daa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HiveUdf.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CustomerUdf/ExtractLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CustomerUdf/ExtractLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CustomerUdf/One2More.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CustomerUdf/One2More.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CustomerUdf/ExtractLogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CustomerUdf/ExtractLogTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CustomerUdf/ExtractLogTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CustomerUdf/ExtractLogTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,7 +22,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1590" />
+          <entry key="JAVA" value="1631" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -39,11 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/CustomerUdf/ExtractLogTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="106" column="45" lean-forward="true" selection-start-line="106" selection-start-column="45" selection-end-line="106" selection-end-column="45" />
+            <state relative-caret-position="1905">
+              <caret line="103" column="9" lean-forward="true" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3434#3435#0" expanded="true" />
@@ -65,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/CustomerUdf/ExtractLog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="43" column="43" lean-forward="true" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
+            <state relative-caret-position="350">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,8 +121,8 @@
         <option value="$PROJECT_DIR$/src/main/java/CustomerUdf/getFieldName.java" />
         <option value="$PROJECT_DIR$/src/main/java/CustomerUdf/One2More.java" />
         <option value="$PROJECT_DIR$/src/test/java/CustomerUdf/ExtractLogTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CustomerUdf/ExtractLog.java" />
         <option value="$PROJECT_DIR$/src/main/java/CustomerUdf/UtilBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CustomerUdf/ExtractLog.java" />
       </list>
     </option>
   </component>
@@ -234,7 +229,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550911890875" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550998263721" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -419,7 +414,7 @@
       <workItem from="1550633874977" duration="1593000" />
       <workItem from="1550654467992" duration="8442000" />
       <workItem from="1550842938039" duration="113000" />
-      <workItem from="1550900323033" duration="9703000" />
+      <workItem from="1550900323033" duration="12194000" />
     </task>
     <servers />
   </component>
@@ -456,13 +451,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20847000" />
+    <option name="totallyTimeSpent" value="23338000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10554371" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10554371" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -472,7 +467,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32790446" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32790446" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39904988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -488,7 +483,7 @@
       <window_info anchor="bottom" id="JRebel Console" order="15" side_tool="true" />
       <window_info anchor="bottom" id="Duplicate detector" order="16" weight="0.32897863" />
       <window_info anchor="bottom" id="Extract Method" order="17" weight="0.32897863" />
-      <window_info anchor="right" id="Maven Projects" visible="true" weight="0.32995737" />
+      <window_info anchor="right" id="Maven Projects" weight="0.32995737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -559,16 +554,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CustomerUdf/ExtractLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="43" column="43" lean-forward="true" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CustomerUdf/UtilBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
@@ -581,12 +566,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CustomerUdf/ExtractLogTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="106" column="45" lean-forward="true" selection-start-line="106" selection-start-column="45" selection-end-line="106" selection-end-column="45" />
+        <state relative-caret-position="1905">
+          <caret line="103" column="9" lean-forward="true" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3434#3435#0" expanded="true" />
             <element signature="e#3528#3529#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CustomerUdf/ExtractLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
