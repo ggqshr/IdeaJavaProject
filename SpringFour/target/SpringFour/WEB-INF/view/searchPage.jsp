@@ -75,7 +75,7 @@
             )
         }
         $("body").keydown(function() { //回车提交
-            if (event.keyCode == "13") {
+            if (event.keyCode === "13") {
                 getPlace();
             }
         });

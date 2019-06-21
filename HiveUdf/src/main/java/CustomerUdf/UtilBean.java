@@ -76,8 +76,7 @@ public class UtilBean {
                     map.put(thisField, Group);
 
                 } catch (UnsupportedEncodingException e) {
-                    map.clear();
-                    return map;
+                    map.put(thisField,"null");
                 } catch (Exception e) {
                     map.clear();
                     return map;
